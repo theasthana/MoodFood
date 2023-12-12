@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# MoodFood - Food Delivery and Ordering Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MoodFood is a full-stack web application designed to provide users with a convenient platform for ordering food online. This project utilizes MongoDB, ExpressJS, ReactJS, Node.js, and Bootstrap to create a seamless and user-friendly experience for customers to browse menus, place orders, and have food delivered to their doorstep.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication:** Secure user authentication system allowing customers to create accounts, log in, and manage their profiles.
+- **Browse Menu:** Users can explore a variety of food items available for order, with detailed descriptions and prices.
+- **Order Placement:** Seamless order placement process with the ability to add multiple items to the cart and proceed to checkout.
+- **Order Tracking:** Users can track the status of their orders from confirmation to delivery.
+- **Admin Panel:** An admin interface to manage menus, view orders, and handle user data.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **MongoDB:** A NoSQL database used to store user information, menu items, orders, and other application data.
+- **ExpressJS:** Node.js framework used for building the backend server and handling HTTP requests.
+- **ReactJS:** Frontend library for building the user interface, providing a dynamic and responsive experience.
+- **Node.js:** Server-side JavaScript runtime environment for running the backend server.
+- **Bootstrap:** Frontend framework for designing responsive and mobile-first websites.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/theasthana/MoodFood.git
+    cd MoodFood
+    ```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    # Install server dependencies
+    cd server
+    npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    # Install client dependencies
+    cd ../client
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Set up environment variables:
+    - Create a `.env` file in the `/server` directory.
+    - Add necessary environment variables (e.g., MongoDB connection string, JWT secret, etc.).
 
-### `npm run eject`
+4. Run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    # Start the server
+    cd server
+    npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    # Start the client
+    cd ../client
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Access the application by visiting `http://localhost:3000` in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source.

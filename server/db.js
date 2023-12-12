@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const category = require("./models/category");
 
 module.exports = async function connect() {
     const url = "mongodb://localhost/moodfood";
@@ -10,10 +9,6 @@ module.exports = async function connect() {
             useUnifiedTopology: true,
         })
         console.log("connection to database is established.");
-        // adding code to output categories:
-        const data = await category.find({});
-        console.log(data);
-        //ending of section
     } catch  (error) {
         console.error("There was an error while connecting to the database");
         console.error(error);
